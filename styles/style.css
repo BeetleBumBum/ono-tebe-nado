@@ -1,1 +1,400 @@
-/* место для вашего кода */
+.content-section {
+  box-sizing: border-box;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  padding: 92px 24px;
+  padding: 92px 24px 96px 24px;
+}
+
+.header__menu {
+  /*align-self: center;
+  justify-self: center;*/  /*так не совпадает по высоте*/
+  margin: 44px 0 39px 26px;
+
+}
+
+.header__menu-list {
+    list-style: circle; /*СМЕСТИТЬ ПОДЧЕРКИВАНИЕ НИЖЕ   И МБ ПОМЕНЯТЬ FONT-SIZE*/
+    display: flex;
+    letter-spacing: 1.4px;
+    gap: 30px;
+
+}
+
+.header__menu-item-active .header__menu-link {
+    text-decoration: none;
+}
+
+.header__menu-item-no-bullit {
+    list-style: none;
+}
+
+.header__logo {
+    display: block;
+    width: 135px;
+    height: 104px;  /*РАЗОБРАТЬСЯ С РАЗМЕРАМИ ЛОГО*/
+}
+
+.address {
+    font-style: normal;
+    /*  justify-self: end;
+    align-self: center;   */
+    margin: 5px 25px 2px 194px;
+    letter-spacing: 1.1px;
+    line-height: 25px;
+}
+
+
+
+.cover {
+  min-height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: -137px 0;
+
+  position: relative;
+}
+
+/*
+.overlay {
+  min-height: 757px;
+  width: 1100px;
+  background-color: rgb(0 0 0 / 0.6);      
+  position: absolute;
+  z-index: 0;
+}
+*/
+
+/* ЛОМАЕМ ОВЕРЛЕЙ. НАВЕРХУ - ИЗНАЧАЛЬНАЯ РАБОТА. НИЖЕ - ИНТЕРНЕТ ПОМОЩЬ 
+СДЕЛАЛА. Верхнее - удалить */
+
+.overlay {
+  background-color: rgb(0 0 0 / 0.6);
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.cover__title {
+  width: 1100px;
+  height: 355px;   /*НУЖНО ЛИ ЭТО?*/
+  color: rgb(256 256 256);
+  font-weight: 700;
+  font-size: 100px;
+  position: absolute;
+  z-index: 1;
+  letter-spacing: 30px; 
+  /* line-height: 122px; */
+  line-height: 125px;
+  padding: 157px 50px 147px 50px;
+  text-transform: uppercase;
+}
+
+.accent-span {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: end;
+  letter-spacing: 60px;
+}
+
+.accent-span__letters-no {
+  letter-spacing: 60px;
+}    
+
+.accent-span__letters-be {
+  letter-spacing: 60px;
+}
+
+.accent-span__letters-ad {
+  letter-spacing: 30px;
+}
+
+.accent-span__letter-o {
+  letter-spacing: normal;
+}
+
+/*ПЕРЕПИСАТЬ ВЕСЬ ЗАГОЛОВОК ИНФОЙ ИЗ ФИГМА
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+-переписать классы для отдельных букв: 2 класса
+-переписать классы для всего
+*/
+
+
+
+.cover__description {
+  width: 1100px;
+  height: 757px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding-bottom: 63px;
+  position: absolute;
+  z-index: 1;
+  color: rgb(256 256 256);
+
+}
+
+.cover__description-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px; /*???*/
+  word-spacing: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 39px;
+}
+
+.bet-button {
+  background-color: transparent;
+  width: 256px;
+  height: 51px;
+  border: 1px solid #fff;
+  font-size: 22px;
+  line-height: 26px;
+  color: rgb(256 256 256);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 9px -10px 0;   /*ЭТОТ МАРДЖИН МНЕ НЕ НРАВИТСЯ*/
+}
+
+
+
+
+
+
+.lots {
+  padding: 178px 24px;
+}
+
+.lots__heading {
+  margin-left: 41px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  padding-top: 27px;
+  padding-bottom: 30px;
+  list-style-type: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12.5px;
+}
+
+.lots__card-list-item {
+  /* ??? */
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card {
+  width: 334px;
+  min-height: 563px;
+
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-size: cover;
+  background-position: center;
+
+  color: rgb(256 256 256);
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.article__content {
+  padding: 51px 40px 48px 40px;
+  position: relative;
+  width: 334px;
+  /* min-height: 563px; */
+  height: 563px;
+
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* У card И article_content ОДИНАКОВЫЕ ЗНАЧЕНИЯ. ПОДУМАТЬ КУДА ЗАСУНУТЬ ОВЕРЛЕЙ */
+.card__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26.4px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.card__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.lots__look-more-link {
+  padding-left: 40px;
+  color: rgb(0 0 0);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23.48px;
+}
+
+
+
+
+
+
+
+
+.about {
+  padding: 5px 24px;
+  width: 1100px; /*???*/
+  height: 595px;
+  
+}
+
+.about__column {
+  display: grid;
+  grid-template-columns: 334px 2fr;
+  height: 595px;
+  width: 1052px;
+}
+
+.about__logo {
+  background-color: rgb(0 0 0);
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  justify-self: center;
+}
+
+.logo__white {
+  /* МНЕ НЕ НРАВИТСЯ ЭТО ПОЗИУИОНИРОВАНИЕ ЛОГОТИПА */
+  height: 48%;
+  position: relative;
+  top: 26%;
+  
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+  margin-top: 101px;
+  margin-left: 25px;
+}
+
+.about__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+
+  margin-top: 101px;  /*МНЕ НЕ НРАВИТСЯ, ХОТЕЛОСЬ БЫ ВЫРАВНЯТЬ ПО КОНЦУ СЕТКИ*/
+  margin-left: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+
+  /* НЕ СОВПАДАЮТ СЛОВА, ДЕЛАТЬ ЛИ СПАНЫ? */
+}
+
+
+
+
+
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;;
+  padding: 151px 50px 88px 50px;
+}
+
+.footer__address {
+  margin: 0 124px 0 0px;
+}
+
+.footer__menu {
+  align-self: start;
+  justify-self: center;
+}
+
+.footer__menu-list {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  list-style: none;
+  text-align: center;
+
+}
+
+.footer__menu-list-item {
+
+}
+
+.footer__menu-link {
+  
+}
+
+.footer__menu-link-active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 94px;
+  
+}
+
+.footer__social-list-item {
+  list-style: none;
+}
+
+
+.footer__social-link {
+
+}
+
+.footer__social-icon {
+
+  height: 48px;
+}
+
+
+
+
+
+
+/*Я ХОТЬ РАЗ ОБРАТИЛАСЬ К КЛАССУ comtemt-section???*/
+/* ПРОВЕРИТЬ ЕСТЬ ЛИ ЛИШНИЕ КЛАССЫ */
+/* РАЗОБРАТЬСЯ С ПАДДИНГАМИ МЕЖДУ СЕКЦИЯМИ */
