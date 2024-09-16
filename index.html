@@ -10,28 +10,27 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header class="header content-section">
+    <header class="header">
       <nav class="header__menu">
         <ul class="header__menu-list">
-          <li class="header__menu-item header__menu-item-active header__menu-item-no-bullit">
+          <li class="header__menu-item-active header__menu-item-no-bullit">
             <a class="header__menu-link" href="#0">главная</a>
           </li> 
-          <li class="header__menu-item">
+          <li>
             <a class="header__menu-link" href="#0">посмотреть лоты</a>
           </li>
-          <li class="header__menu-item">
+          <li>
             <a class="header__menu-link" href="#0">об аукционе</a>
           </li>  
         </ul>
       </nav>
       <a class="header__logo">
         <img
-        class="header__logo-image"
         src="./images/logo-black.svg"
         alt="Логотип Оно тебе надо"
         />  
       </a> 
-      <address class="address header_address">
+      <address class="address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <br>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
@@ -41,14 +40,14 @@
         </p>
       </address>
     </header>
-    <main class="content">
+    <main>
       <section
-        class="cover content-section">  
+        class="cover">  
         <div class="overlay"></div> 
         <h1 class="cover__title" >
-          <span class="accent-span">о<span class="accent-span__letters-no">но</span></span>
-          <span class="accent-span text-center">те<span class="accent-span__letters-be">бе</span></span>
-          <span class="accent-span text-right">н<span class="accent-span__letters-ad">ад</span><span class="accent-span__letter-o">о</span></span>
+          <span class="aligned-text">о<span class="letter-spacing-extended">но</span></span>
+          <span class="aligned-text aligned-text_center">те<span class="letter-spacing-extended">бе</span></span>
+          <span class="aligned-text aligned-text_right">н<span class="no-letter-spacing">ад</span><span class="no-letter-spacing">о</span></span>
         </h1>
         <div class="cover__description">
           <p class="cover__description-text">аукцион вещей, в которые никто не верил</p>
@@ -58,7 +57,7 @@
       <section class="lots">
         <h1 class="lots__heading">лоты</h1>
         <ul class="lots__card-list">
-          <li class="lots__card-list-item">
+          <li>
             <a class="card-link" href="#0">
               <article class="card card_type_film">
                 <div class="overlay"></div> 
@@ -69,7 +68,7 @@
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item"></li>
+          <li>
             <a class="card-link" href="#0">
               <article class="card card_type_book">
                 <div class="overlay"></div>
@@ -80,7 +79,7 @@
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item"></li>
+          <li>
             <a class="card-link" href="#0">
               <article class="card card_type_picture">
                 <div class="overlay"></div>
@@ -128,14 +127,14 @@
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
-          <li class="footer__menu-list-item">
+          <li>
             <a class="footer__menu-link footer__menu-link-active" href="#0">главная</a>
             <!-- ВОЗМОЖНО В HEADER НУЖНО СДЕЛАТЬ ТАКЖЕ АКТИВНУЮ ССЫЛКУ -->
           </li> 
-          <li class="footer__menu-list-item">
+          <li>
             <a class="footer__menu-link" href="#0">посмотреть лоты</a>
           </li>
-          <li class="header__menu-list-item">
+          <li>
             <a class="footer__menu-link" href="#0">об аукционе</a>
           </li>  
         </ul>
